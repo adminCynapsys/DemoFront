@@ -13,7 +13,7 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 export class UtilisateurComponent implements OnInit {
  public utilisateurs: Utilisateur[];
 public utilisateur: any = {};
-public isEdit: false;
+isEdit: Boolean = false;
 closeResult: string;
   constructor( private  utilisateurService: UtilisateurService, private modalService: NgbModal) { }
 
@@ -68,11 +68,13 @@ this.utilisateurService.supprimerUtilisateur(id).subscribe(res => {
 }
 reset() {
 this.utilisateur = {};
+this.isEdit = false;
 }
 getById(idClient: number , index: number) {
   this.utilisateurService.getById(idClient).subscribe(
     res => {
       this.utilisateur = res;
+      this.isEdit = true;
     }
   );
 }

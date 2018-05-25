@@ -84,7 +84,6 @@
 
 
 <div class="card mb-3">
-
 <div class="card-header">
   <button class="btn btn-primary" (click)="open(content);reset();">Ajouter utilisateur</button>
 </div>
@@ -105,18 +104,15 @@
         <td>{{user.email}}</td>
         <td>
           <div class="btn-group">
-      <a  class="btn btn-success btn-flat "  (click)="open(content); getById(user.id,index)"><i class="fa fa-pencil-square-o"> Modifier</i></a>
-                       
+      <a  class="btn btn-success btn-flat "  (click)="open(content); getById(user.id,index)"><i class="fa fa-pencil-square-o"> Modifier</i></a>               
             </div> 
         </td>
         <td>
           <div class="btn-group">
-     <a data-toggle="modal" class="btn btn-danger btn-flat " (click)="supprimerUtilisateur(user.id,index)"><i class="fa fa-trash"> Supprimer</i></a>
-           
-            </div> 
+     <a data-toggle="modal" class="btn btn-danger btn-flat " (click)="supprimerUtilisateur(user.id,index)"><i class="fa fa-trash"> Supprimer</i>
+    </a></div> 
         </td>
-    </tr>
-   
+     </tr>
     </tbody>
 </table>
 </div>

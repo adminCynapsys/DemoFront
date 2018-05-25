@@ -29,5 +29,8 @@
     "In queue" : "Dans la queue",
     "Mail" : "Courrier",
     "View All" : "Voir tout",
-    "Users" : "Utilisateurs"
+    "Users" : "Utilisateurs",
+    "messages" : {
+    "required": "Ce champ est obligatoire"
+    }
 }
